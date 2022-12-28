@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>UI-KIT</title>
+        <meta name="viewport" content="wigth=device-width, initial-scale=1, shrink-to-fit=no, minimal-ui">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Raleway:ital,wght@0,400;0,500;0,800;1,400&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Raleway:ital,wght@0,400;0,500;0,800;1,400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../ui_kit/css/normalize.css">
+        <link rel="stylesheet" href="../ui_kit/css/style.css">
+
+        <style>
+            .ui-section {
+                margin-bottom: 9rem;
+            }
+            @media screen and (min-width: 721px) {
+                .ui-section {
+                    margin-bottom: 12rem;
+                }
+            }
+            .ui-grid > * {
+                color: var(--color-red);
+                background: var(--color-light-orange);
+                padding: 1rem;
+            }
+            @media screen and (min-width: 721px) {
+                .ui-grid > * {
+                    padding: 2rem;
+                }
+            }
+            .ui-colors {
+                grid-auto-rows: minmax(140px, auto);
+            }
+            .ui-colors > * {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: stretch;
+                padding: 1rem;
+            }
+            .ui-outline {
+                outline: 1px solid rgb(0, 0, 0, 0.2);
+            }
+            @media screen and (min-width: 721px) {
+                .ui-colors > * {
+                    padding: 2rem;
+                }
+            }
+            .ui-icons > * {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="layout-header">
+            <div class="layout-container">
+
+                <div class="header-wrapper">
+                    <a href="https://cases.media/creativepractice" class="header-logo">
+                        <img src="../ui_kit/img/logo.svg" width="126" height="56" alt="Creative Practice">
+                    </a>
+
+                    <nav class="header-menu">
+                        <ul class="nav">
+                            <li class="d-none d-desk-block">
+                                <a href="#">About course</a>
+                            </li>
+
+                            <li class="d-none d-desk-block">
+                                <a href="#">Who teach</a>
+                            </li>
+
+                            <li class="dropdown d-none d-desk-block">
+                                <a href="#">Course program</a>
+
+                                <div class="dropdown-wrapper">
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Theory</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Practice</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="dropdown d-desk-none">
+                                <a href="#">Menu</a>
+
+                                <div class="dropdown-wrapper dd-left dd-tab-right">
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">About course</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Who teach</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Program</a>
+                                        </li>
+
+                                        <li class="btn d-tab-none">
+                                            <div>
+                                                <a href="#"
+                                                class="btn-orange">Registration</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="btn d-none d-tab-block">
+                                <div>
+                                    <a href="#" class="btn-orange">Registration</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </header>
+        <div class="layout-content">
+            <div class="layout-container">
+
+                <h1 class="mb-3 c-black">Interface complect</h1>
+
+                <section class="ui-section">
+                    <h2 class="h4 h-sup mb-4">Grid</h2>
+
+                    <h3 class="my-4">Four columns</h3>
+
+                    <div class="d-grid grid grid-cols-4 my-4 ui-grid f-small ta-center">
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+
+                        <div class="col-span-4">.col-span-4</div>
+
+                        <div class="col-span-3">.col-span-3</div>
+                        <div>&ndash;</div>
+
+                        <div class="col-span-2">.col-span-2</div>
+                        <div class="col-span-2">.col-span-2</div>
+                    </div>
+
+                    <h3 class="d-done d-tab-block my-4">Eight columns (tablets and more)</h3>
+
+                    <div class="d-done d-tab-grid grid grid-cols-8 my-4 ui-grid f-small ta-center">
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+
+                        <div class="col-span-8">.col-span-8</div>
+
+                        <div class="col-span-7">.col-span-7</div>
+                        <div>&ndash;</div>
+
+                        <div class="col-span-6">.col-span-6</div>
+                        <div class="col-span-2">.col-span-2</div>
+
+                        <div class="col-span-5">.col-span-5</div>
+                        <div class="col-span-3">.col-span-3</div>
+
+                        <div class="col-span-4">.col-span-4</div>
+                        <div class="col-span-4">.col-span-4</div>
+                    </div>
+
+                    <h3 class="d-none d-desk-block my-4 c-black">Twelve columns (desctop)</h3>
+
+                    <div class="d-none d-desk-grid grid ui-grid f-small ta-center">
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+
+                        <div class="col-span-12">.col-span-12</div>
+
+                        <div class="col-span-11">.col-span-11</div>
+                        <div>-</div>
+
+                        <div class="col-span-10">.col-span-10</div>
+                        <div class="col-span-2">.col-span-2</div>
+
+                        <div class="col-span-9">.col-span-10</div>
+                        <div class="col-span-3">.col-span-2</div>
+
+                        <div class="col-span-8">.col-span-10</div>
+                        <div class="col-span-4">.col-span-2</div>
+
+                        <div class="col-span-7">.col-span-10</div>
+                        <div class="col-span-5">.col-span-2</div>
+
+                        <div class="col-span-6">.col-span-10</div>
+                        <div class="col-span-6">.col-span-2</div>
+
+
+                    </div>
+                </section>
+
+                <section class="ui-section">
+                    <div class="grid grid-cols-1 grid-cols-desk-12 gy-4">
+                        
+                        <div class="col-span-desk-6">
+
+                            <h2 class="h4 h-sup mb-4">Typography</h2>
+
+                            <div class="h1 c-black">Headline H1</div>
+                            <div class="h2 c-black">Headline H2</div>
+                            <div class="h3 c-black">Headline H3</div>
+
+                            <p class="c-black">
+                                Basic text. Course "Frontend Basics. HTML and CSS" 
+                                is an important first step for mastering the profession
+                                of a front-end developer. On the course, we will go from
+                                getting acquainted with the general principles of web 
+                                project layout to creating an adaptive landing page.
+                            </p>
+
+                            <p class="c-black">
+                                <em>A sloping essay.</em>
+                            </p>
+
+                            <div class="h3 c-black">Headline H3</div>
+
+                            <p class="c-black">
+                                Basic text. Course "Frontend Basics. HTML and CSS" 
+                                is an important first step for mastering the profession
+                                of a front-end developer. On the course, we will go from
+                                getting acquainted with the general principles of web
+                                project layout to creating an adaptive landing page.
+                            </p>
+
+                            <p class="f-small c-black">
+                                In some cases, slightly reduced text is used.
+                            </p>
+
+                            <p class="c-black">
+                                <strong>This project also provides a rich version of the texts.</strong>
+                            </p>
+
+                            <div class="h4 h-sup">Supheadline</div>
+
+                            <p class="c-black">Used to label groups of elements in the interface kit.</p>
+
+                        </div>
+
+                        <div class="col-start-desk-8 col-span-desk-4">
+                            <div class="h4 h-sup">Links</div>
+
+                            <div class="grid grid-cols-2 gy-4">
+                                <div class="col-span-2 col-span-tab-1 col-span-desk-2">
+                                    <h3 class="mb-4 mt-4 c-black">On a light background</h3>
+
+                                    <div class="fw-800 bg-light-blue b-rad-8 px-2 py-1">
+                                        <div class="my-1">
+                                            <a href="#">Basic link status</a>
+                                        </div>
+                                        <div class="my-1">
+                                            <a href="https://google.com">Visited 
+                                                link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-2 gy-4">
+                                <div class="col-span-2 col-span-tab-1 col-span-desk-2">
+                                    <h3 class="mb-4 mt-4 c-black">On a dark background</h3>
+
+                                    <div class="fw-800 bg-dark-blue b-rad-8 px-2 py-1">
+                                        <div class="my-1">
+                                            <a class="l-dark" href="#">Basic link status</a>
+                                        </div>
+                                        <div class="my-1">
+                                            <a class="l-dark" href="https://google.com">Visited 
+                                                link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="ui-section">
+                    <h2 class="h4 h-sup mb-4">Color pallete</h2>
+
+                    <div class="grid drid-cols-1 grid-cols-tab-2 grid-cols-desk-4 grid-cols-phone-1 ui-colors
+                    ta-center">
+                        <div class="c-light-gray bg-black b-rad-8">
+                            <div class="fw-800 mb-1">Black</div>
+                            <div class="f-small mb-1">#000</div>
+                            <div class="f-small">.c-black</div>
+                            <div class="f-small">.bg-black</div>
+                        </div>
+
+                        <div class="c-light-gray bg-dark-blue b-rad-8">
+                            <div class="fw-800 mb-1">Dark Blue</div>
+                            <div class="f-small mb-1">#13111C</div>
+                            <div class="f-small">.c-dark-blue</div>
+                            <div class="f-small">.bg-dark-blue</div>
+                        </div>
+
+                        <div class="c-light-gray bg-gray b-rad-8">
+                            <div class="fw-800 mb-1">Gray</div>
+                            <div class="f-small mb-1">#595E69</div>
+                            <div class="f-small">.c-gray</div>
+                            <div class="f-small">.bg-gray</div>
+                        </div>
+
+                        <div class="c-black bg-light-blue b-rad-8">
+                            <div class="fw-800 mb-1">Light Blue</div>
+                            <div class="f-small mb-1">#E4EEFF</div>
+                            <div class="f-small">.c-light-blue</div>
+                            <div class="f-small">.bg-light-blue</div>
+                        </div>
+
+                        <div class="c-light-gray bg-blue b-rad-8">
+                            <div class="fw-800 mb-1">Blue</div>
+                            <div class="f-small mb-1">#0058F1</div>
+                            <div class="f-small">.c-blue</div>
+                            <div class="f-small">.bg-blue</div>
+                        </div>
+                        
+                        <div class="c-light-gray bg-deep-blue b-rad-8">
+                            <div class="fw-800 mb-1">Deep Blue</div>
+                            <div class="f-small mb-1">#004ED4</div>
+                            <div class="f-small">.c-deep-blue</div>
+                            <div class="f-small">.bg-deep-blue</div>
+                        </div>
+
+                        <div class="c-light-gray bg-heaven b-rad-8">
+                            <div class="fw-800 mb-1">Heaven</div>
+                            <div class="f-small mb-1">#5C96FD</div>
+                            <div class="f-small">.c-heaven</div>
+                            <div class="f-small">.bg-heaven</div>
+                        </div>
+
+                        <div class="c-black bg-dark-blue-gray b-rad-8">
+                            <div class="fw-800 mb-1">Dark Blue-Gray</div>
+                            <div class="f-small mb-1">#789AD9</div>
+                            <div class="f-small">.c-dark-blue-gray</div>
+                            <div class="f-small">.bg-dark-blue-gray</div>
+                        </div>
+
+
+                        <div class="c-black bg-yellow b-rad-8">
+                            <div class="fw-800 mb-1">Yellow</div>
+                            <div class="f-small mb-1">#FFE873</div>
+                            <div class="f-small">.c-yellow</div>
+                            <div class="f-small">.bg-yellow</div>
+                        </div>
+
+                        <div class="c-black bg-light-yellow b-rad-8">
+                            <div class="fw-800 mb-1">Light Yellow</div>
+                            <div class="f-small mb-1">#FFF9DB</div>
+                            <div class="f-small">.c-light-yellow</div>
+                            <div class="f-small">.bg-light-yellow</div>
+                        </div>
+
+                        <div class="c-black bg-white b-rad-8">
+                            <div class="fw-800 mb-1">White</div>
+                            <div class="f-small mb-1">#FFF</div>
+                            <div class="f-small">.c-white</div>
+                            <div class="f-small">.bg-white</div>
+                        </div>
+
+                        <div class="c-black bg-light-gray b-rad-8">
+                            <div class="fw-800 mb-1">Light Gray</div>
+                            <div class="f-small mb-1">#F5F7FA</div>
+                            <div class="f-small">.c-light-gray</div>
+                            <div class="f-small">.bg-light-gray</div>
+                        </div>
+
+                        <div class="c-black bg-orange b-rad-8">
+                            <div class="fw-800 mb-1">Orange</div>
+                            <div class="f-small mb-1">#FF7E1A</div>
+                            <div class="f-small">.c-orange</div>
+                            <div class="f-small">.bg-orange</div>
+                        </div>
+
+                        <div class="c-black bg-warm-orange b-rad-8">
+                            <div class="fw-800 mb-1">Warm Orange</div>
+                            <div class="f-small mb-1">#FF6F00</div>
+                            <div class="f-small">.c-warm-orange</div>
+                            <div class="f-small">.bg-warm-orange</div>
+                        </div>
+
+                        <div class="c-black bg-light-orange b-rad-8">
+                            <div class="fw-800 mb-1">Light Orange</div>
+                            <div class="f-small mb-1">#FFECDD</div>
+                            <div class="f-small">.c-light-orange</div>
+                            <div class="f-small">.bg-light-orange</div>
+                        </div>
+
+                        <div class="c-black bg-deep-orange b-rad-8">
+                            <div class="fw-800 mb-1">Deep Orange</div>
+                            <div class="f-small mb-1">#FB6008</div>
+                            <div class="f-small">.c-deep-orange</div>
+                            <div class="f-small">.bg-deep-orange</div>
+                        </div>
+
+                        <div class="c-black bg-red b-rad-8">
+                            <div class="fw-800 mb-1">Red</div>
+                            <div class="f-small mb-1">#E42A11</div>
+                            <div class="f-small">.c-red</div>
+                            <div class="f-small">.bg-red</div>
+                        </div>
+
+                        <div class="c-black bg-violet b-rad-8">
+                            <div class="fw-800 mb-1">Violet</div>
+                            <div class="f-small mb-1">#94649F</div>
+                            <div class="f-small">.c-violet</div>
+                            <div class="f-small">.bg-violet</div>
+                        </div>
+
+                        <div class="c-light-gray bg-transparent-black b-rad-8">
+                            <div class="fw-800 mb-1">Transparent Black</div>
+                            <div class="f-small mb-1">rgba(0, 0, 0, 0.9)</div>
+                            <div class="f-small">.c-transparent-black</div>
+                            <div class="f-small">.bg-transparent-black</div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="ui-section">
+                    <h2 class="h4 h-sup mb-4">Icons</h2>
+
+                    <div class="flex flex-auto fgy-4 ui-icons">
+                        <div class="bg-gray b-rad-8 p-3">
+                            <span class="icon-down-arrow"></span>
+                        </div>
+
+                        <div class="bg-blue b-rad-8 p-3">
+                            <span class="icon-globe"></span>
+                        </div>
+
+                        <div class="bg-blue b-rad-8 p-3">
+                            <span class="icon-bookmark"></span>
+                        </div>
+
+                        <div class="bg-blue b-rad-8 p-3">
+                            <span class="icon-clapping-hands"></span>
+                        </div>
+
+                        <div class="bg-blue b-rad-8 p-3">
+                            <span class="icon-film-state"></span>
+                        </div>
+
+                        <div class="bg-blue b-rad-8 p-3">
+                            <span class="icon-timer"></span>
+                        </div>
+
+                        <div class="bg-blue b-rad-8 p-3">
+                            <span class="icon-glass"></span>
+                        </div>
+
+                        <div class="bg-light-gray b-rad-8 p-3">
+                            <span class="icon-down-arrow-blue"></span>
+                        </div>
+
+                        <div class="bg-black b-rad-8 p-3">
+                            <span class="icon-facebook"></span>
+                        </div>
+
+                        <div class="bg-black b-rad-8 p-3">
+                            <span class="icon-instagram"></span>
+                        </div>
+
+                        <div class="bg-black b-rad-8 p-3">
+                            <span class="icon-cases"></span>
+                        </div>
+
+                        <div class="bg-black b-rad-8 p-3">
+                            <span class="icon-telegram"></span>
+                        </div>
+
+                        <div class="bg-light-gray b-rad-8 p-3">
+                            <span class="icon-gray-arrow-right"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ui-section">
+                    <h2 class="h4 h-sup mb=4">Buttons</h2>
+
+                    <div class="grid grid-cols-1 grid-cols-tab-2 grid-cols-desk-3 ta-center">
+                        <div class="bg-light-blue b-rad-1 py-3 px-2">
+                            <div class="f-small mb-1 c-black">Orange button</div>
+                            <div>
+                                <a href="#" class="btn-orange">Registration</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-light-blue b-rad-1 py-3 px-2">
+                            <div class="f-small mb-1 c-black">Black button</div>
+                            <div>
+                                <a href="#" class="btn-black">Registration</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-dark-blue b-rad-1 py-3 px-2">
+                            <div class="f-small mb-1 c-light-gray">White button</div>
+                            <div>
+                                <a href="#" class="btn-white">Registration</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ui-section">
+                    <h2 class="h4 h-sup mb-4">Forms</h2>
+
+                    <div class="grid grid-cols-1 grid-cols-tab-2 g-4">
+                        <div class="bg-light-blue b-rad-1 grid grid-cols-1 grid-cols-desk-6 
+                        py-3">
+                            
+                            <div class="col-start-desk-2 col-span-desk-4 form px-3 px-desk-0">
+                                <div class="field">
+                                    <div class="f-small align-self-center mb-1">Input field</div>
+                                    <label for="name">Your name</label>
+                                    <input id="name" type="text" class="control"
+                                    placeholder="Enter your name">
+                                </div>
+
+                                <div class="field error">
+                                    <label for="name-error">Your name</label>
+                                    <input id="name-error" type="text" class="control"
+                                    placeholder="Enter your name">
+                                    <p class="error-msg">Error text</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="bg-light-blue b-rad-1 grid grid-cols-1 grid-cols-desk-6 
+                        py-3">
+
+                            <div class="col-start-desk-2 col-span-desk-4 form px-3 
+                                px-desk-0">
+                                <div class="field">
+                                    <div class="f-small align-self-center mb-1">Input select</div>
+                                    <label for="region">Your region</label>
+                                    <select id="region" class="control">
+                                        <option class="default" selected>Select a country</option>
+                                        <option>Ucraine</option>
+                                        <option>Poland</option>
+                                    </select>
+                                </div>
+
+                                <div class="field error">
+                                    <label for="region-error">Your region</label>
+                                    <select id="region-error" class="control">
+                                        <option class="default">Select country</option>
+                                        <option selected>Vaishoria</option>
+                                    </select>
+                                    <p class="error-msg">Unknown country</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="bg-light-blue b-rad-1 grid grid-cols-1 grid-cols-desk-6
+                            py-3">
+
+                            <div class="col-start-desk-2 col-span-desk-4 form px-3 px-desk-0">
+                                <div class="field">
+                                    <div class="f-small align-self-center mb-1">Checkboxes</div>
+                                    <label>One checkbox</label>
+                                    <label class="checkbox">
+                                        <input type="checkbox">I am agree with <a href="#" class="fw-700">offer contract</a>
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    <label>Some Checkboxes</label>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        First option
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Second option
+                                    </label>
+                                </div>
+
+                                <div class="field error">
+                                    <label>Checkbox with error</label>
+                                    <label class="checkbox">
+                                        <input type="checkbox">I am agree with <a href="#" class="fw-700">offer contract</a>
+                                    </label>
+                                    <p class="error-msg">To send the form you need 
+                                        to agree to the terms of the offer
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="bg-light-blue b-rad-1 grid grid-cols-1 grid-cols-desk-6
+                         py-3">
+
+                            <div class="col-start-desk-2 col-span-desk-4 form px-3 px-desk-0">
+                                <div class="field">
+                                    <div class="f-small align-self-center mb-1">Radiobuttons</div>
+                                    <label>Some radiobuttons</label>
+                                    <label class="radio">
+                                        <input type="radio" name="radio" checked>
+                                        First variant
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="radio">
+                                        Second variant
+                                    </label>
+                                </div>
+
+                                <div class="field error">
+                                    <label>Radiobuttons with error</label>
+                                    <label class="radio">
+                                        <input type="radio" name="radio-error">
+                                        First variant
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="radio-error" checked>
+                                        Second variant
+                                    </label>
+                                    <p class="error-msg">We do not approve of your chosen option</p>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ui-section">
+                    <h2 class="h4 h-sup mb-4">Components</h2>
+
+                    <div class="grid grid-cols-1 grid-cols-desk-2 g-4">
+
+                        <article class="program">
+                            <h3 class="program-title">Theory</h3>
+
+                            <div class="program-modules">
+
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 class="module-title">Getting to know the tags</h4>
+                                        <div class="module-text">
+                                            <p>Introduction to the course. What is HTML and CSS. Tags and their types.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="..//ui_kit/img/image 40.png" width="172" height="96">
+                                    </div>
+                                </article>
+
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 class="module-title">Work with the styles</h4>
+                                        <div class="module-text">
+                                            <p>Connecting CSS cascading style sheets
+                                                 and text formatting. Work with tables.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="..//ui_kit/img/image 401.png" width="172" height="96">
+                                    </div>
+                                </article>
+                            </div>
+                        </article>
+
+                        <div class="grid grid-cols-1 grid-cols-tab-2 grid-cols-desk-3 g-4">
+                            <div class="col-span-desk-2">
+                                <h3 class="h4 h-sup c-black mb-3">Others courses of Practice</h3>
+
+                                <ul class="linklist flex flex-col fg-2">
+                                    <li>
+                                        <a href="#">Work with Figma</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Webdesign</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Work with Webflow</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Prototyping and interface design</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-span-desk-2">
+                                <h3 class="h4 h-sup c-black mb-3">Useful links</h3>
+
+                                <ul class="h4 h-sup c-black mb-3 linklist flex flex-col fg-2">
+                                    <li>
+                                        <a href="https://material.io">
+                                            <span class="icon-gray-arrow-right mr-1"></span>
+                                            <span>material.io</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://getbootstrap.com">
+                                            <span class="icon-gray-arrow-right mr-1"></span>
+                                            <span>getbootstrap.com</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
